@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #fff;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.heading {
+    font-size: 36px;
+    color: #6a4f94;
+    margin-bottom: 40px;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan {
+    background-color: #9b7cb5;
+    padding: 30px;
+    border-radius: 15px;
+    width: 280px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.plan h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.price {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+    color: #fff;
+}
+
+.btn {
+    background-color: #6a4f94;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4e3b77;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+}
+
+.silver {
+    background-color: #a18db7;
+}
+
+.gold {
+    background-color: #f2b750;
+}
+
+.platinum {
+    background-color: #b57dd6;
+}
+
+@media (max-width: 768px) {
+    .plans {
+        flex-direction: column;
+    }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+	body {
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+		
+		font-family: 'Karla', sans-serif;
+		font-size: 16px;
+		background-color: hsl(204, 43%, 93%);
+		display: flex;
+		flex-direction: column;
+        gap: 100px;
+		align-items: center;
+		justify-content: center;
+	}
+	.fw-7 {font-weight: 700;}
+	.fw-4 {font-weight: 400;}
+    .heading2{
+        font-size: 50px;
+        color: black;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+	main {width: 720px;border-radius: 8px;box-shadow: 0px 0px 18px 1px #0800001c; margin-bottom: 100px;}
+	.panel {display: flex;flex-direction: column;width: 100%;}
+	.panel .panel-header {width: 100%;display: flex;flex-direction: column;padding: 40px 50px;background: white;border-radius: 8px 8px 0px 0px;box-sizing: border-box;}
+	.panel .panel-header h3 {color: hsl(179, 62%, 43%);font-size: 26px;margin: 0px;}
+	.panel .panel-header h4 {margin: 25px 0px 0px 0px;color: #5a3991;font-size: 19px;}
+	.panel .panel-header .panel-text {margin-top: 20px;display: flex;flex-direction: column;row-gap: 7px;color: hsl(218, 22%, 67%);}
+	.panel .panel-header .panel-text p {margin: 0px; line-height: 26px;}
+	.panel .panel-body {width: 100%;border-radius: 0px 0px 8px 8px;display: flex;flex-direction: row;box-sizing: border-box;}
+	.panel .panel-body .panel-left {width: 50%;padding: 40px 50px;display: flex;flex-direction: column;justify-content: center;background:#6a4f94;border-radius: 0px 0px 0px 8px;box-sizing: border-box;}
+	.panel .panel-body .panel-left span.span1 {font-size: 35px;display: inline-block;color: white;}
+	.panel .panel-body .panel-left span.span2 {font-size: 20px;display: inline-block;color: #ffffff94;}
+	.panel .panel-body .panel-left h3 {color: white;font-size: 19px;margin: 0px;}
+	.panel .panel-body .panel-left p {color: #ffffff8c;display: flex;flex-direction: row;column-gap: 14px;align-items: center;margin-bottom: 0px;}
+	.panel .panel-body .panel-left h4 {color: #ffffff94;display: flex;flex-direction: row;column-gap: 6px;align-items: center;margin-top: 0;}
+	.panel .panel-body .panel-left button {height: 50px;border-radius: 8px;border: 0;outline: none;color: white;background: #9b7ccc;font-size: 16px;box-shadow: 0px 1px 10px 1px #08000036;}
+	.panel .panel-body .panel-right {width: 50%;padding: 40px 50px;background:#4b3077;border-radius: 0px 0px 8px 0px;box-sizing: border-box;}
+	.panel .panel-body .panel-right h3 {color: white;font-size: 19px;margin: 0px;}
+	.panel .panel-body .panel-right .panel-text {color: #ffffff94;margin-top: 20px;}
+	.panel .panel-body .panel-right .panel-text p {margin: 2px 0px;font-size: 15px;}
+	@media only screen and (max-width: 675px) {
+		body {
+			height: 100%;
+    		margin: 60px auto;
+		}
+		main {
+			width: 310px;
+			margin: 0px auto;
+		}
+		.panel .panel-header {
+			padding: 30px 25px;
+		}
+		.panel .panel-body {
+			flex-direction: column;
+		}
+		.panel .panel-body .panel-left {
+			width: 100%;
+			border-radius: 0px;
+			padding: 30px 25px;
+		}
+		.panel .panel-body .panel-right {
+			width: 100%;
+			border-radius: 0px 0px 8px 8px;
+			padding: 30px 25px;
+		}
+	}
